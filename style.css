@@ -1,0 +1,22 @@
+:root {
+  /* COLORS */
+  --white: #E1EBED;
+  --black: #303539;
+  --yellow: #FFE556;
+  --blue: #00BCF0;
+  --lightBlack: #44484B;
+
+  /* TEXTS */
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 16px;
+} /* 1 rem = 10 px */
