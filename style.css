@@ -6,17 +6,58 @@
   --blue: #00BCF0;
   --lightBlack: #44484B;
 
-  /* TEXTS */
-
+  /* FONT */
+  --fontFamily: "Montserrat", sans-serif;
 }
 
+/* GLOBAL */
 * {
   margin: 0;
   padding: 0;
 }
 html {
   font-size: 62.5%;
+  font-family: var(--fontFamily);
 }
 body {
+  margin: 0 20rem;
+
+  background-color: var(--lightBlack);
   font-size: 16px;
 } /* 1 rem = 10 px */
+
+/* SHARED */
+.p {
+  font-size: 1.6rem;
+  line-height: 3.6rem;
+  letter-spacing: .2rem;
+}
+
+/* NAVIGATION */
+nav {
+  color: var(--blue);
+  height: 10.5rem;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  column-gap: 4rem;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--yellow)
+}
