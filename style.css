@@ -100,11 +100,13 @@ button {
   align-items: center;
   justify-content: center;
 
+  border: 1;
   background-color: transparent;
   border-color: var(--yellow);
   border-radius: .7rem;  
   color: var(--white);
   font-size: 1.5rem;
+  border-style: solid;
 }
 button img {
   width: 2rem;
