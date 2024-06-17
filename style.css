@@ -26,7 +26,7 @@ body {
 } /* 1 rem = 10 px */
 
 /* ---------SHARED--------- */
-nav, main, footer {
+header, main, footer {
   padding: 0 20rem;
 }
 
@@ -40,7 +40,6 @@ nav, main, footer {
   display: flex;
   justify-content: space-between;
 }
-
 
 .yellow_btn:hover {
   background-color: var(--yellow);
@@ -58,7 +57,7 @@ nav, main, footer {
 }
 
 /* ---------NAVIGATION--------- */
-nav {
+header {
   color: var(--blue);
   height: 10.5rem;
   
@@ -84,9 +83,19 @@ a:hover {
   color: var(--yellow)
 }
 
+.textCenter {
+  text-align: center;
+}
+
 /* ---------MAIN--------- */
 main {
   background-color: var(--black);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 4rem;
 }
 
 button {
@@ -121,6 +130,10 @@ h1 {
 h2 {
   font-size: 2.6rem;
   font-weight: 400;
+  color: var(--white);
+}
+
+#degree {
   color: var(--blue);
 }
 
@@ -139,9 +152,39 @@ span {
   width: 20rem;
   height: 20rem;
   border-radius: 20rem;
+
+  /* Temporary property */
+  background-color: var(--white);
 }
 
 #curriculum {
   width: 13rem;
   height: 4rem;
+}
+
+/* PROJECTS */
+hr {
+  border-color: var(--blue);
+}
+
+.technology_container {
+  display: flex;
+  column-gap: .5rem;
+  align-items: center;
+
+  background-color: var(--white);
+  width: 8rem;
+  padding: .5rem 1rem;
+  border-radius: 1.4rem;
+
+  color: var(--black);
+}
+
+.technology_container img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.technology_container p {
+  font-size: 1.5rem;
 }
