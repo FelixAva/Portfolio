@@ -60,10 +60,6 @@ header, main, footer {
   text-align: center;
 }
 
-.section__title {
-
-}
-
 /* ---------NAVIGATION--------- */
 header {
   color: var(--blue);
@@ -180,23 +176,27 @@ hr {
 }
 .project__container {
   width: 40rem;
-  padding: .5rem 1rem;
+  padding: 1rem;
 
   border-radius: .7rem;
   border-style: solid;
   border-width: 1px;
   border-image: linear-gradient(var(--blue), var(--yellow)) 1;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
 }
 
 .project_image {
-
+  width: 40rem;
 }
 
 .technology__container {
   display: flex;
   column-gap: .5rem;
   align-items: center;
-
+  
   background-color: var(--white);
   width: 8rem;
   padding: .5rem 1rem;
@@ -214,6 +214,11 @@ hr {
   font-size: 1.5rem;
 }
 
+.project_title {
+}
 .project_description {
   text-align: justify;
+
+}
+.project_buttons {
 }
