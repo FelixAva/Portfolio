@@ -41,7 +41,7 @@ header, main, footer {
   justify-content: space-between;
 }
 
-.yellow_btn:hover {
+.yellow__btn:hover {
   background-color: var(--yellow);
   border-color: transparent;
   cursor: pointer;
@@ -54,6 +54,14 @@ header, main, footer {
 }
 .imageOn, button:hover .imageOff {
   display: block;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.section__title {
+
 }
 
 /* ---------NAVIGATION--------- */
@@ -83,10 +91,6 @@ a:hover {
   color: var(--yellow)
 }
 
-.textCenter {
-  text-align: center;
-}
-
 /* ---------MAIN--------- */
 main {
   background-color: var(--black);
@@ -94,8 +98,8 @@ main {
   padding-bottom: 5rem;
 
   display: grid;
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 4rem;
+  grid-template-rows: auto auto auto;
+  row-gap: 5.5rem;
 }
 
 button {
@@ -109,13 +113,13 @@ button {
   align-items: center;
   justify-content: center;
 
-  border: 1;
   background-color: transparent;
   border-color: var(--yellow);
   border-radius: .7rem;  
+  border-style: solid;
+
   color: var(--white);
   font-size: 1.5rem;
-  border-style: solid;
 }
 button img {
   width: 2rem;
@@ -167,7 +171,21 @@ hr {
   border-color: var(--blue);
 }
 
-.technology_container {
+.section__title {
+  margin-top: 2rem;
+}
+
+.projects__section {
+  
+}
+.project__container {
+  border-radius: .7rem;
+  border-style: solid;
+  border-width: 1px;
+  border-image: linear-gradient(var(--blue), var(--yellow)) 1;
+}
+
+.technology__container {
   display: flex;
   column-gap: .5rem;
   align-items: center;
@@ -180,11 +198,11 @@ hr {
   color: var(--black);
 }
 
-.technology_container img {
+.technology__container img {
   width: 2rem;
   height: 2rem;
 }
 
-.technology_container p {
+.technology__container p {
   font-size: 1.5rem;
 }
