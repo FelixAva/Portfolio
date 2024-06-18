@@ -171,7 +171,7 @@ hr {
   border-color: var(--blue);
 }
 
-.section__title {
+.section_title {
   margin-top: 2rem;
 }
 
@@ -179,10 +179,17 @@ hr {
   
 }
 .project__container {
+  width: 40rem;
+  padding: .5rem 1rem;
+
   border-radius: .7rem;
   border-style: solid;
   border-width: 1px;
   border-image: linear-gradient(var(--blue), var(--yellow)) 1;
+}
+
+.project_image {
+
 }
 
 .technology__container {
@@ -205,4 +212,8 @@ hr {
 
 .technology__container p {
   font-size: 1.5rem;
+}
+
+.project_description {
+  text-align: justify;
 }
