@@ -191,8 +191,8 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 2.5rem;
   margin-top: 2rem;
+  gap: 2.5rem;
 }
 .project_card {
   width: 40rem;
@@ -255,11 +255,18 @@ hr {
 
 /* STACK */
 
+.stacks__container {
+  margin: 2rem 2rem 0 2rem;
 
-/* ---------FOOTER--------- */
-.footer {
-  background-color: var(--lightBlack);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  justify-content: center;
+  column-gap: 2rem;
+  row-gap: 1.5rem;
 }
+
 .stack_card {
   width: 14.5rem;
   padding: .5rem 1rem;
@@ -274,10 +281,10 @@ hr {
 
   border-radius: 1.4rem;
 }
-
 .stack_card img {
-  width: 5rem;
+  object-fit: scale-down;
   height: 5rem;
+  width: 5rem;
 }
 
 .rightContent {
@@ -290,4 +297,9 @@ hr {
 }
 #auxiliar {
   width: min-content;
+}
+
+/* ---------FOOTER--------- */
+.footer {
+  background-color: var(--lightBlack);
 }
