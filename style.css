@@ -261,17 +261,18 @@ hr {
   background-color: var(--lightBlack);
 }
 .stack_card {
-  /* width: min-content; */
+  width: 14.5rem;
   padding: .5rem 1rem;
-
+  
   background-color: var(--white);
   color: var(--black);
+  
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1rem;
 
   border-radius: 1.4rem;
-
-  display: inline-flex;
-  align-items: center;
-  column-gap: 1rem;
 }
 
 .stack_card img {
@@ -280,9 +281,13 @@ hr {
 }
 
 .rightContent {
-  max-width: 8.5rem;
-  align-content: center;
+  flex: 1;
+  height: 5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.stack_card p {
-  
+#auxiliar {
+  width: min-content;
 }
