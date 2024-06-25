@@ -72,6 +72,12 @@ header, main, footer {
   text-align: center;
 }
 
+.fit_image {
+  object-fit: scale-down;
+  height: 5rem;
+  width: 5rem;
+}
+
 /* ---------NAVIGATION--------- */
 header {
   color: var(--blue);
@@ -281,11 +287,6 @@ hr {
 
   border-radius: 1.4rem;
 }
-.stack_card img {
-  object-fit: scale-down;
-  height: 5rem;
-  width: 5rem;
-}
 
 .rightContent {
   flex: 1;
@@ -300,6 +301,29 @@ hr {
 }
 
 /* ---------FOOTER--------- */
-.footer {
-  background-color: var(--lightBlack);
+footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.built_container {
+  display: flex;
+  gap: 5rem;
+}
+
+h4 {
+  
+}
+
+.social_media {
+  display: flex;
+  flex-direction: column;
+}
+
+footer hr {
+  border-color: var(--white);
 }
