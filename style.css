@@ -68,10 +68,6 @@ header, main, footer {
   display: block;
 }
 
-.textCenter {
-  text-align: center;
-}
-
 .fit_image {
   object-fit: scale-down;
   height: 5rem;
@@ -149,6 +145,8 @@ h2 {
   font-size: 2.6rem;
   font-weight: 400;
   color: var(--white);
+
+  text-align: center;
 }
 
 #degree {
@@ -247,13 +245,14 @@ hr {
   font-size: 1.5rem;
 }
 
-.project_title {
+h3 {
+  font-size: 2.2rem;
   text-align: center;
 }
 .project_description {
   text-align: justify;
-
 }
+
 .project_buttons {
   display: flex;
   justify-content: space-evenly;
@@ -310,20 +309,35 @@ footer {
   gap: 5rem;
 }
 
-.built_container {
+.built__container {
   display: flex;
   gap: 5rem;
-}
-
-h4 {
-  
 }
 
 .social_media {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+h4 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 3rem;
+}
+
+#developer {
+  color: var(--yellow);
 }
 
 footer hr {
   border-color: var(--white);
+}
+
+ul {
+  height: 7.5rem;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
