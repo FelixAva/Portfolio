@@ -145,8 +145,6 @@ h2 {
   font-size: 2.6rem;
   font-weight: 400;
   color: var(--white);
-
-  text-align: center;
 }
 
 #degree {
@@ -189,6 +187,7 @@ hr {
 }
 .section_title {
   margin-top: 2rem;
+  text-align: center;
 }
 
 .projects__container {
@@ -324,6 +323,11 @@ h4 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 3rem;
+}
+
+.built_by {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
 }
 
 #developer {
