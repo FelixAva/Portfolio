@@ -325,11 +325,6 @@ h4 {
   margin-bottom: 3rem;
 }
 
-.built_by {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-}
-
 #developer {
   color: var(--yellow);
 }
