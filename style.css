@@ -44,8 +44,6 @@ header, main, footer {
 .yellow__btn:hover {
   background-color: var(--yellow);
   border-color: transparent;
-  cursor: pointer;
-
   color: var(--black);
 }
 
@@ -58,7 +56,6 @@ header, main, footer {
   border-color: transparent;
   background-color: var(--blue);
   color: var(--black);
-  cursor: pointer;
 }
 
 .imageOff, button:hover .imageOn {
@@ -130,6 +127,8 @@ button {
 
   color: var(--white);
   font-size: 1.5rem;
+
+  cursor: pointer;
 }
 button img {
   width: 2rem;
