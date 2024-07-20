@@ -1,11 +1,5 @@
 :root {
   /* COLORS */
-  --white: #E1EBED;
-  --black: #303539;
-  --yellow: #FFE556;
-  --blue: #00BCF0;
-  --lightBlack: #44484B;
-  
   /* --white: #E1EBED;
   --black: #293840;
   --yellow: #e5bec2;
@@ -17,6 +11,13 @@
   --yellow: #97dafd;
   --blue: #ed008c;
   --lightBlack: #000000; */
+
+  --white: #E1EBED;
+  --black: #303539;
+  --yellow: #FFE556;
+  --blue: #00BCF0;
+  --lightBlack: #44484B;
+  
 
 
   /* FONT */
@@ -337,6 +338,14 @@ h4 {
   margin-bottom: 3rem;
 }
 
+.grid {
+  display: grid;
+}
+
+.align-bottom {
+  align-self: end;
+}
+
 #developer {
   color: var(--yellow);
 }
@@ -346,9 +355,9 @@ footer hr {
 }
 
 ul {
-  height: 7.5rem;
-  width: 20rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+
+  justify-content: end;
 }
