@@ -346,12 +346,13 @@ h4 {
 
 #two_rows {
   grid-row: 2/4;
-  /* grid-row-start: 2;
-  grid-row-end: 4; */
 }
 
 .align-bottom {
   align-self: end;
+}
+.align-center {
+  align-self: center;
 }
 
 #developer {
@@ -360,12 +361,4 @@ h4 {
 
 footer hr {
   border-color: var(--white);
-}
-
-ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 5rem;
-
-  align-items: end;
 }
