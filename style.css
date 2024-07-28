@@ -40,7 +40,7 @@ body {
 } /* 1 rem = 10 px */
 
 /* ---------SHARED--------- */
-header, .main_container, footer {
+header, #main_container, footer {
   width: 80%;
   position: relative;
   left: 10%;
@@ -145,7 +145,7 @@ main {
   background-color: var(--black);
 }
 
-.main_container {
+#main_container {
   padding-top: 5rem;
   padding-bottom: 5rem;
   
