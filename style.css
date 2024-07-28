@@ -40,8 +40,10 @@ body {
 } /* 1 rem = 10 px */
 
 /* ---------SHARED--------- */
-header, main, footer {
-  padding: 0 20rem;
+header, .main_container, footer {
+  width: 80%;
+  position: relative;
+  left: 10%;
 }
 
 .paragraph {
@@ -141,9 +143,12 @@ a:hover {
 /* ---------MAIN--------- */
 main {
   background-color: var(--black);
+}
+
+.main_container {
   padding-top: 5rem;
   padding-bottom: 5rem;
-
+  
   display: grid;
   grid-template-rows: auto auto auto;
   row-gap: 5.5rem;
