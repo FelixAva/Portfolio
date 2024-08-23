@@ -21,6 +21,8 @@
 
   /* FONT */
   --fontFamily: "Montserrat", sans-serif;
+
+  /*! Add font sizes variables  */
 }
 
 /* ---------GLOBAL--------- */
@@ -155,23 +157,36 @@ main {
 
 
 /* ABOUT ME */
+#about_me {
+  height: 28rem;
+}
+
 h1 {
   font-size: 3.4rem;
   font-weight: 600;
 }
 h2 {
+  margin-top: 1rem;
+
   font-size: 2.6rem;
   font-weight: 400;
   color: var(--white);
+}
+
+#personal_information {
+  flex-grow: 1;
+  position: relative;
 }
 
 #degree {
   color: var(--blue);
 }
 
-#myDescription {
-  margin-top: 4.5rem;
-  max-width: 42rem;
+#my_description {
+  width: 70%;
+
+  position: absolute;
+  bottom: 0;
 }
 span {
   color: var(--yellow);
@@ -185,7 +200,7 @@ span {
   height: 20rem;
   border-radius: 20rem;
 
-  /* Temporary property */
+  /*! Temporary property */
   background-color: var(--white);
 }
 
