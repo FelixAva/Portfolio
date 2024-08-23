@@ -17,7 +17,6 @@
   --yellow: #FFE556;
   --blue: #00BCF0;
   --lightBlack: #44484B;
-  
 
 
   /* FONT */
@@ -41,9 +40,9 @@ body {
 
 /* ---------SHARED--------- */
 header, #main_container, footer {
-  width: 80%;
+  width: 60%;
   position: relative;
-  left: 10%;
+  left: 20%;
 }
 
 .paragraph {
@@ -64,13 +63,13 @@ header, #main_container, footer {
   display: flex;
   flex-direction: row;
   align-self: center;
-  column-gap: 1rem;
   align-items: center;
   justify-content: center;
+  column-gap: 1rem;
 
   background-color: transparent;
   border-color: var(--yellow);
-  border-radius: .7rem;  
+  border-radius: .7rem;
   border-style: solid;
 
   color: var(--white);
@@ -117,7 +116,7 @@ header, #main_container, footer {
 header {
   color: var(--blue);
   height: 10.5rem;
-  
+
   align-items: center;
 }
 
@@ -148,7 +147,7 @@ main {
 #main_container {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  
+
   display: grid;
   grid-template-rows: auto auto auto;
   row-gap: 5.5rem;
@@ -244,7 +243,7 @@ hr {
   display: flex;
   column-gap: .5rem;
   align-items: center;
-  
+
   background-color: var(--white);
   width: 8rem;
   padding: .5rem 1rem;
@@ -292,10 +291,10 @@ h3 {
 .stack_card {
   width: 14.5rem;
   padding: .5rem 1rem;
-  
+
   background-color: var(--white);
   color: var(--black);
-  
+
   display: flex;
   align-items: center;
   justify-content: flex-start;
