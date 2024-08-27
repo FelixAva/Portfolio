@@ -1,3 +1,5 @@
+import { Technology } from '/sources/js/components/technologyComponent.js';
+
 const doc = document;
 
 export class Project {
