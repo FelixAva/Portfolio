@@ -16,6 +16,7 @@ export class Project {
 
     // Create no-container content; image, title, description.
     this.createImage( image );
+    this.createTitle( title );
   }
 
   /* ---------------------Card methods--------------------- */
@@ -40,5 +41,13 @@ export class Project {
 
     img.classList.add("project_image");
     this.card.append(img);
+  };
+
+  createTitle = ( title ) => {
+    const h3 = doc.createElement("h3");
+    h3.innerText = title;
+
+    h3.classList.add("project_title");
+    this.card.append(h3);
   };
 }
