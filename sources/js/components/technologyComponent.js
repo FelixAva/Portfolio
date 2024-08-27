@@ -5,6 +5,10 @@ export class Technology {
   techContainer;
 
   constructor( name, image, cardId ) {
-    console.log(name);
+    this.project = this.getProject( cardId );
   }
+
+  getProject = ( cardId ) => {
+    return doc.getElementById( cardId );
+  };
 }
