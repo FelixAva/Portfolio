@@ -9,6 +9,7 @@ export class Technology {
 
     this.createTechonologyContainer();
     this.createImage( image );
+    this.createName( name );
   }
 
   getProject = ( cardId ) => {
@@ -28,5 +29,12 @@ export class Technology {
     img.alt = "Technology used - Image";
 
     this.techContainer.append( img );
+  };
+
+  createName = ( name ) => {
+    const p = doc.createElement("p");
+    p.innerText = name;
+
+    this.techContainer.append( p );
   };
 }
