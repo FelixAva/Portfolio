@@ -7,9 +7,12 @@ export class Project {
 
   constructor({ id, image, title, description, technologies }) {
     this.id = id;
+
+    // Create Project Card.
     this.card = this.createCard();
 
     this.addIdToCard();
+    this.addClassToCard();
   }
 
   /* ---------------------Card functions--------------------- */
@@ -22,4 +25,6 @@ export class Project {
   };
 
   addIdToCard = () => this.card.id = this.id;
+
+  addClassToCard = () => this.card.classList.add("project_card");
 }
