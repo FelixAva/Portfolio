@@ -1,4 +1,4 @@
-import { Technology } from '/sources/js/technologyComponent.js';
+import { Technology } from '/sources/js/components/technologyComponent.js';
 
 const doc = document;
 

@@ -1,4 +1,4 @@
-import { Project } from '/sources/js/projectComponent.js';
+import { Project } from '/sources/js/components/projectComponent.js';
 
 const path = '/sources/data/projects.json';
 
