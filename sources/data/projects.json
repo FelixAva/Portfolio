@@ -1,0 +1,62 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "WorkMatch",
+      "image": "Captura de pantalla 2024-06-02 224446",
+      "description": "Collaboratively developed a mobile application with React Native designed to facilitate connections between employers and job seekers.",
+      "key_contributions": [
+        "Developed custom hooks to:",
+        "Collect and send user registration data to the database.",
+        "Validate login credentials by retrieving and verifying data from the database.",
+        "Retrieve and display user information across various app screens."
+      ],
+      "category": "Mobile",
+      "modality": "Team",
+      "technologies": [
+        {
+          "name": "GitHub",
+          "image": "githubIcon"
+        },
+        {
+          "name": "GitHub",
+          "image": "githubIcon"
+        },
+        {
+          "name": "GitHub",
+          "image": "githubIcon"
+        }
+      ],
+      "github_link": "https:link.com"
+    },
+    {
+      "id": 2,
+      "title": "Another",
+      "image": "Captura de pantalla 2024-06-02 224446",
+      "description": "Collaboratively developed a mobile application with React Native designed to facilitate connections between employers and job seekers.",
+      "key_contributions": [
+        "Developed custom hooks to:",
+        "Collect and send user registration data to the database.",
+        "Validate login credentials by retrieving and verifying data from the database.",
+        "Retrieve and display user information across various app screens."
+      ],
+      "category": "Mobile",
+      "modality": "Team",
+      "technologies": [
+        {
+          "name": "GitHub",
+          "image": "githubIcon"
+        },
+        {
+          "name": "GitHub",
+          "image": "githubIcon"
+        },
+        {
+          "name": "GitHub",
+          "image": "githubIcon"
+        }
+      ],
+      "github_link": "https:link.com"
+    }
+  ]
+}

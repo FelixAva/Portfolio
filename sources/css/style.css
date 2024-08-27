@@ -222,7 +222,7 @@ hr {
   text-align: center;
 }
 
-.projects__container {
+#projects__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
