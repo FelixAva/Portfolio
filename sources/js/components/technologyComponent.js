@@ -8,6 +8,7 @@ export class Technology {
     this.project = this.getProject( cardId );
 
     this.createTechonologyContainer();
+    this.createImage( image );
   }
 
   getProject = ( cardId ) => {
@@ -21,4 +22,11 @@ export class Technology {
     this.project.getElementsByTagName("div")[0].append( this.techContainer );
   };
 
+  createImage = ( image ) => {
+    const img = doc.createElement("img");
+    img.src = `/sources/images/${ image }.png`;
+    img.alt = "Technology used - Image";
+
+    this.techContainer.append( img );
+  };
 }
