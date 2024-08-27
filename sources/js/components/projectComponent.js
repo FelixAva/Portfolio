@@ -26,6 +26,9 @@ export class Project {
     this.createButton("GitHub");
     this.createButtonImg( 0, "rightArrowLight", "rightArrowDark" );
     this.createButtonImg( 1, "githublighticon", "githubicon" );
+
+    // Create technologies
+    this.createTechnologiesContainer();
   }
 
   /* ---------------------Card methods--------------------- */
@@ -84,8 +87,8 @@ export class Project {
 
     button.innerText = btnType;
     btnType === "Project"
-      ? button.classList.add("blue__btn")
-      : button.classList.add("yellow__btn")
+    ? button.classList.add("blue__btn")
+    : button.classList.add("yellow__btn")
     ;
 
     button.classList.add("button");
@@ -107,5 +110,13 @@ export class Project {
     });
 
     btn.appendChild( img );
+  };
+
+  /* ---------------------Card technologies methods--------------------- */
+  createTechnologiesContainer = () => {
+    const techs = doc.createElement("div");
+
+    techs.classList.add("technologies");
+    this.card.append(techs);
   };
 }
