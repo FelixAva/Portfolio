@@ -18,6 +18,9 @@ export class Project {
     this.createImage( image );
     this.createTitle( title );
     this.createDescription( description );
+
+    // Create buttons
+    this.btnsContainer = this.createButtonsContainer();
   }
 
   /* ---------------------Card methods--------------------- */
@@ -41,7 +44,7 @@ export class Project {
     img.alt = "Project model image";
 
     img.classList.add("project_image");
-    this.card.append(img);
+    this.card.append( img );
   };
 
   createTitle = ( title ) => {
@@ -49,7 +52,7 @@ export class Project {
     h3.innerText = title;
 
     h3.classList.add("project_title");
-    this.card.append(h3);
+    this.card.append( h3 );
   };
 
   createDescription = ( description ) => {
@@ -58,6 +61,16 @@ export class Project {
 
     desc.classList.add("project_description");
     desc.classList.add("paragraph");
-    this.card.append(desc);
+    this.card.append( desc );
+  };
+
+  /* ---------------------Card buttons methods--------------------- */
+  createButtonsContainer = () => {
+    const btnsContainer = doc.createElement("div");
+
+    btnsContainer.classList.add("project_buttons");
+    this.card.append( btnsContainer );
+
+    return btnsContainer;
   };
 }
