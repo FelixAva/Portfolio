@@ -1,15 +1,15 @@
 const doc = document;
 
-class Project extends HTMLElement {
+export class Project {
   id;
   card;
   btnsContainer;
 
   constructor({ id, image, title, description, technologies }) {
-    super();
-
     this.id = id;
-    this.card = this.createCard;
+    this.card = this.createCard();
+
+    this.addIdToCard();
   }
 
   /* ---------------------Card functions--------------------- */
@@ -20,6 +20,6 @@ class Project extends HTMLElement {
 
     return projects.lastElementChild;
   };
-}
 
-export default Project;
+  addIdToCard = () => this.card.id = this.id;
+}
