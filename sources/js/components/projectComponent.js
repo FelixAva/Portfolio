@@ -29,6 +29,7 @@ export class Project {
 
     // Create technologies
     this.createTechnologiesContainer();
+    this.getTechonologies( technologies );
   }
 
   /* ---------------------Card methods--------------------- */
@@ -118,5 +119,11 @@ export class Project {
 
     techs.classList.add("technologies");
     this.card.append(techs);
+  };
+
+  getTechonologies = ( techs ) => {
+    techs.map( ({ name, image }) => {
+      console.log(name);
+    });
   };
 }
