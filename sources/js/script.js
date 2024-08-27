@@ -1,6 +1,6 @@
-import { Project } from "/sources/js/components/projectComponent.js";
+import { Project } from '/sources/js/components/projectComponent.js';
 
-const path = '../../sources/data/projects.json';
+const path = '/sources/data/projects.json';
 
 fetch( path )
   .then( response => response.json() )

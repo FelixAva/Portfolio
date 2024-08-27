@@ -13,9 +13,12 @@ export class Project {
 
     this.addIdToCard();
     this.addClassToCard();
+
+    // Create no-container content; image, title, description.
+    this.createImage( image );
   }
 
-  /* ---------------------Card functions--------------------- */
+  /* ---------------------Card methods--------------------- */
   createCard = () => {
     const projects = doc.getElementById("projects__container");
 
@@ -27,4 +30,15 @@ export class Project {
   addIdToCard = () => this.card.id = this.id;
 
   addClassToCard = () => this.card.classList.add("project_card");
+
+  /* ---------------------Card content methods--------------------- */
+  createImage = ( image ) => {
+    const img = doc.createElement("img");
+
+    img.src = `/sources/images/${ image }.png`;
+    img.alt = "Project model image";
+
+    img.classList.add("project_image");
+    this.card.append(img);
+  };
 }
