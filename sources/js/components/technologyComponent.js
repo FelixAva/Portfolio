@@ -6,6 +6,8 @@ export class Technology {
 
   constructor( name, image, cardId ) {
     this.project = this.getProject( cardId );
+
+    this.createTechonologyContainer();
   }
 
   getProject = ( cardId ) => {
@@ -15,7 +17,8 @@ export class Technology {
   createTechonologyContainer = () => {
     this.techContainer = doc.createElement("div");
 
-    this.techContainer.classList("technology__container");
-    this.techContainer.append( this.techContainer );
+    this.techContainer.classList.add("technology__container");
+    this.project.getElementsByTagName("div")[0].append( this.techContainer );
   };
+
 }

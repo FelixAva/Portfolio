@@ -120,7 +120,8 @@ export class Project {
     const techs = doc.createElement("div");
 
     techs.classList.add("technologies");
-    this.card.append(techs);
+    this.card.append( techs );
+    this.card.firstElementChild.after( techs );
   };
 
   getTechonologies = ( techs ) => {
