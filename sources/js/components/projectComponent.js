@@ -21,6 +21,9 @@ export class Project {
 
     // Create buttons
     this.btnsContainer = this.createButtonsContainer();
+
+    this.createButton("Project");
+    this.createButton("GitHub");
   }
 
   /* ---------------------Card methods--------------------- */
@@ -72,5 +75,18 @@ export class Project {
     this.card.append( btnsContainer );
 
     return btnsContainer;
+  };
+
+  createButton = ( btnType ) => {
+    const button = doc.createElement("button");
+
+    button.innerText = btnType;
+    btnType === "Project"
+      ? button.classList.add("blue__btn")
+      : button.classList.add("yellow__btn")
+    ;
+
+    button.classList.add("button");
+    this.btnsContainer.append(button);
   };
 }
