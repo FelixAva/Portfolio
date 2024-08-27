@@ -24,6 +24,8 @@ export class Project {
 
     this.createButton("Project");
     this.createButton("GitHub");
+    this.createButtonImg( 0, "rightArrowLight", "rightArrowDark" );
+    this.createButtonImg( 1, "githublighticon", "githubicon" );
   }
 
   /* ---------------------Card methods--------------------- */
@@ -87,6 +89,23 @@ export class Project {
     ;
 
     button.classList.add("button");
-    this.btnsContainer.append(button);
+    this.btnsContainer.append( button );
+  };
+
+  createButtonImg = ( position, imageNoHover, imageOnHover ) => {
+    const btn = this.btnsContainer.getElementsByTagName("button")[ position ];
+    const img = doc.createElement("img");
+
+    img.src = `/sources/images/${ imageNoHover }.png`;
+
+    btn.addEventListener("mouseleave", () => {
+      img.src = `/sources/images/${ imageNoHover }.png`;
+    });
+
+    btn.addEventListener("mouseenter", () => {
+      img.src = `/sources/images/${ imageOnHover }.png`;
+    });
+
+    btn.appendChild( img );
   };
 }
