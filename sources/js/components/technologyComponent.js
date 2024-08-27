@@ -11,4 +11,11 @@ export class Technology {
   getProject = ( cardId ) => {
     return doc.getElementById( cardId );
   };
+
+  createTechonologyContainer = () => {
+    this.techContainer = doc.createElement("div");
+
+    this.techContainer.classList("technology__container");
+    this.techContainer.append( this.techContainer );
+  };
 }

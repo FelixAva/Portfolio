@@ -125,7 +125,7 @@ export class Project {
 
   getTechonologies = ( techs ) => {
     techs.map( ({ name, image }) => {
-      console.log(name);
+      new Technology( name, image, this.id );
     });
   };
 }
