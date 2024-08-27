@@ -54,7 +54,7 @@ export class Project {
 
   createDescription = ( description ) => {
     const desc = doc.createElement("p");
-    desc.innerHTML = description;
+    desc.innerText = description;
 
     desc.classList.add("project_description");
     desc.classList.add("paragraph");
