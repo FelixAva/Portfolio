@@ -26,8 +26,8 @@ export class Project {
 
     this.createProjectButton();
     this.createGitHubButton( github_link );
-    this.createButtonImg( 0, "rightArrowLight", "rightArrowDark" );
-    this.createButtonImg( 1, "githublighticon", "githubicon" );
+    this.createButtonImg( 0, "rightarrow_light", "rightarrow_dark" );
+    this.createButtonImg( 1, "github_light", "github_dark" );
 
     // Create technologies
     this.createTechnologiesContainer();
@@ -51,7 +51,7 @@ export class Project {
   createImage = ( image ) => {
     const img = doc.createElement("img");
 
-    img.src = `/sources/images/${ image }.png`;
+    img.src = `/sources/images/projects_models/${ image }.png`;
     img.alt = "Project model image";
 
     img.classList.add("project_image");
@@ -110,14 +110,14 @@ export class Project {
     const a = this.btnsContainer.getElementsByTagName("a")[ position ];
     const img = doc.createElement("img");
 
-    img.src = `/sources/images/${ imageNoHover }.png`;
+    img.src = `/sources/images/technologies/${ imageNoHover }.webp`;
 
     a.addEventListener("mouseleave", () => {
-      img.src = `/sources/images/${ imageNoHover }.png`;
+      img.src = `/sources/images/technologies/${ imageNoHover }.webp`;
     });
 
     a.addEventListener("mouseenter", () => {
-      img.src = `/sources/images/${ imageOnHover }.png`;
+      img.src = `/sources/images/technologies/${ imageOnHover }.webp`;
     });
 
     a.appendChild( img );

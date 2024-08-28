@@ -25,7 +25,7 @@ export class Technology {
 
   createImage = ( image ) => {
     const img = doc.createElement("img");
-    img.src = `/sources/images/${ image }.png`;
+    img.src = `/sources/images/technologies/${ image }.webp`;
     img.alt = "Technology used - Image";
 
     this.techContainer.append( img );
