@@ -24,7 +24,7 @@ export class Project {
     // Create buttons
     this.btnsContainer = this.createButtonsContainer();
 
-    this.createProjectButton("Project");
+    this.createProjectButton();
     this.createGitHubButton( github_link );
     this.createButtonImg( 0, "rightArrowLight", "rightArrowDark" );
     this.createButtonImg( 1, "githublighticon", "githubicon" );
@@ -85,9 +85,10 @@ export class Project {
     return btnsContainer;
   };
 
-  createProjectButton = ( btnType, href ) => {
+  createProjectButton = () => {
     const a = doc.createElement("a");
-    a.innerText = btnType;
+    a.innerText = "Project";
+    a.href = "/sources/pages/projectDetails.html";
 
     a.classList.add("button");
     a.classList.add("blue__btn");
