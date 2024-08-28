@@ -24,10 +24,10 @@ export class Project {
     // Create buttons
     this.btnsContainer = this.createButtonsContainer();
 
-    this.createButton("Project");
-    this.createButton("GitHub");
+    this.createProjectButton("Project");
+    // this.createGitHubButton("GitHub", github_link);
     this.createButtonImg( 0, "rightArrowLight", "rightArrowDark" );
-    this.createButtonImg( 1, "githublighticon", "githubicon" );
+    // this.createButtonImg( 1, "githublighticon", "githubicon" );
 
     // Create technologies
     this.createTechnologiesContainer();
@@ -85,18 +85,12 @@ export class Project {
     return btnsContainer;
   };
 
-  createButton = ( btnType ) => {
+  createProjectButton = ( btnType, href ) => {
     const a = doc.createElement("a");
-
     a.innerText = btnType;
 
-    if ( btnType === "Project") {
-      a.classList.add("blue__btn");
-    } else {
-      a.classList.add("yellow__btn");
-    }
-
     a.classList.add("button");
+    a.classList.add("blue__btn");
     this.btnsContainer.append( a );
   };
 
