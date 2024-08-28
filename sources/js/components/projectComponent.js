@@ -7,7 +7,7 @@ export class Project {
   card;
   btnsContainer;
 
-  constructor({ id, image, title, description, technologies }) {
+  constructor({ id, image, title, description, technologies, github_link }) {
     this.id = id;
 
     // Create Project Card.
@@ -86,33 +86,35 @@ export class Project {
   };
 
   createButton = ( btnType ) => {
-    const button = doc.createElement("button");
+    const a = doc.createElement("a");
 
-    button.innerText = btnType;
-    btnType === "Project"
-    ? button.classList.add("blue__btn")
-    : button.classList.add("yellow__btn")
-    ;
+    a.innerText = btnType;
 
-    button.classList.add("button");
-    this.btnsContainer.append( button );
+    if ( btnType === "Project") {
+      a.classList.add("blue__btn");
+    } else {
+      a.classList.add("yellow__btn");
+    }
+
+    a.classList.add("button");
+    this.btnsContainer.append( a );
   };
 
   createButtonImg = ( position, imageNoHover, imageOnHover ) => {
-    const btn = this.btnsContainer.getElementsByTagName("button")[ position ];
+    const a = this.btnsContainer.getElementsByTagName("a")[ position ];
     const img = doc.createElement("img");
 
     img.src = `/sources/images/${ imageNoHover }.png`;
 
-    btn.addEventListener("mouseleave", () => {
+    a.addEventListener("mouseleave", () => {
       img.src = `/sources/images/${ imageNoHover }.png`;
     });
 
-    btn.addEventListener("mouseenter", () => {
+    a.addEventListener("mouseenter", () => {
       img.src = `/sources/images/${ imageOnHover }.png`;
     });
 
-    btn.appendChild( img );
+    a.appendChild( img );
   };
 
   /* ---------------------Card technologies methods--------------------- */
