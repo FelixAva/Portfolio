@@ -366,6 +366,12 @@ h4 {
   grid-row: span 2;
 }
 
+.built_with {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2.5rem;
+}
+
 .align-bottom {
   align-self: end;
 }
