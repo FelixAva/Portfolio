@@ -3,7 +3,7 @@
     {
       "id": 1,
       "title": "WorkMatch",
-      "image": "Captura de pantalla 2024-06-02 224446",
+      "image": "workmatch",
       "description": "Collaboratively developed a mobile application with React Native designed to facilitate connections between employers and job seekers.",
       "key_contributions": [
         "Developed custom hooks to:",
@@ -11,8 +11,8 @@
         "Validate login credentials by retrieving and verifying data from the database.",
         "Retrieve and display user information across various app screens."
       ],
-      "category": "Mobile",
-      "modality": "Team",
+      "category": "mobile",
+      "modality": "team",
       "technologies": [
         {
           "image": "react"
@@ -28,8 +28,8 @@
     },
     {
       "id": 2,
-      "title": "Another",
-      "image": "Captura de pantalla 2024-06-02 224446",
+      "title": "Portfolio",
+      "image": "portfolio",
       "description": "Collaboratively developed a mobile application with React Native designed to facilitate connections between employers and job seekers.",
       "key_contributions": [
         "Developed custom hooks to:",
@@ -37,20 +37,17 @@
         "Validate login credentials by retrieving and verifying data from the database.",
         "Retrieve and display user information across various app screens."
       ],
-      "category": "Mobile",
-      "modality": "Team",
+      "category": "web",
+      "modality": "team",
       "technologies": [
         {
-          "name": "GitHub",
-          "image": "github_dark"
+          "image": "html"
         },
         {
-          "name": "GitHub",
-          "image": "github_dark"
+          "image": "css"
         },
         {
-          "name": "GitHub",
-          "image": "github_dark"
+          "image": "javascript"
         }
       ],
       "github_link": "https://github.com/FelixAva/react-native-calculator"

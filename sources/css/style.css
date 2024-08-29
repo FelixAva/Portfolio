@@ -18,7 +18,6 @@
   --blue: #00BCF0;
   --lightBlack: #44484B; */
 
-
   /* FONT */
   --fontFamily: "Montserrat", sans-serif;
 
@@ -245,7 +244,13 @@ hr {
 
 .project_image {
   width: 40rem;
+  height: 19rem;
+  object-fit: contain;
   border-radius: .2rem;
+}
+
+.project_image:hover {
+  height: auto;
 }
 
 .technologies {
