@@ -9,7 +9,7 @@ export class Technology {
 
     this.createTechonologyContainer();
     this.createImage( image );
-    this.createName( name );
+    // this.createName( name );
   }
 
   getProject = ( cardId ) => {
