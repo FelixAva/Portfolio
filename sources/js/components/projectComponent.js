@@ -5,6 +5,8 @@ const doc = document;
 export class Project {
   id;
   card;
+  firstContainer;
+  secondContainer;
   btnsContainer;
 
   constructor({ id, image, title, description, technologies, github_link }) {
@@ -16,13 +18,15 @@ export class Project {
     this.addIdToCard();
     this.addClassToCard();
 
+    // Create the two container in the card
+    this.firstContainer = this.createFirstContainer();
+
     // Create no-container content; image, title, description.
     this.createImage( image );
     this.createTitle( title );
 
     description = this.truncateDescription( description );
 
-    console.log(description);
     this.createDescription( description );
 
     // Create buttons
@@ -51,6 +55,16 @@ export class Project {
 
   addClassToCard = () => this.card.classList.add("project_card");
 
+  /* ---------------------Card methods--------------------- */
+  createFirstContainer = () => {
+    const div = doc.createElement("div");
+
+    div.classList.add("first_container");
+    this.card.append( div );
+
+    return div;
+  };
+
   /* ---------------------Card content methods--------------------- */
   createImage = ( image ) => {
     const img = doc.createElement("img");
@@ -59,7 +73,7 @@ export class Project {
     img.alt = "Project model image";
 
     img.classList.add("project_image");
-    this.card.append( img );
+    this.firstContainer.append( img );
   };
 
   createTitle = ( title ) => {

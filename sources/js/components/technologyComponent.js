@@ -19,7 +19,7 @@ export class Technology {
     this.techContainer = doc.createElement("div");
 
     this.techContainer.classList.add("technology__container");
-    this.project.getElementsByTagName("div")[0].append( this.techContainer );
+    this.project.getElementsByTagName("div")[1].append( this.techContainer );
   };
 
   createImage = ( image ) => {
