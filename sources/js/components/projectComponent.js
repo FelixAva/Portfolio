@@ -19,6 +19,10 @@ export class Project {
     // Create no-container content; image, title, description.
     this.createImage( image );
     this.createTitle( title );
+
+    description = this.truncateDescription( description );
+
+    console.log(description);
     this.createDescription( description );
 
     // Create buttons
@@ -73,6 +77,12 @@ export class Project {
     desc.classList.add("project_description");
     desc.classList.add("paragraph");
     this.card.append( desc );
+  };
+
+  truncateDescription = ( description ) => {
+    const maxChar = 145;
+
+    return description.substring(0, maxChar).trim() + "...";
   };
 
   /* ---------------------Card buttons methods--------------------- */

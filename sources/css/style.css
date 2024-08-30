@@ -230,6 +230,7 @@ hr {
 }
 .project_card {
   width: 40rem;
+  height: min-content;
   padding: 1rem;
 
   border-style: solid;
