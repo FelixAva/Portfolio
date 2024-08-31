@@ -49,6 +49,27 @@
         }
       ],
       "github_link": "https://github.com/FelixAva/Portfolio"
+    },
+    {
+      "id": 3,
+      "title": "Calculator",
+      "image": "calculator",
+      "description": "Created a personal portfolio website to showcase my projects, dynamically rendering content using HTML, CSS, and JavaScript without relying on a database.",
+      "key_contributions": [
+        "Implemented dynamic project rendering by fetching data from a manually created JSON file.",
+        "Structured the site with clean, maintainable code, focusing on user experience and accessibility."
+      ],
+      "category": "web",
+      "modality": "personal",
+      "technologies": [
+        {
+          "image": "react"
+        },
+        {
+          "image": "typescript"
+        }
+      ],
+      "github_link": "https://github.com/FelixAva/react-native-calculator"
     }
   ]
 }

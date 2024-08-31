@@ -54,7 +54,7 @@ export class Project {
   createImage = ( image ) => {
     const img = doc.createElement("img");
 
-    img.src = `/sources/images/projects_models/${ image }.png`;
+    img.src = `/sources/images/projects_models/${ image }.webp`;
     img.alt = "Project model image";
 
     img.classList.add("project_image");
