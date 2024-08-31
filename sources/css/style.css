@@ -236,17 +236,7 @@ hr {
   border-style: solid;
   border-width: 1px;
   border-image: linear-gradient(var(--blue), var(--yellow)) 1;
-  border-radius: .7rem;
 
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-}
-
-.first_container {
-}
-
-.second_container {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
@@ -256,11 +246,6 @@ hr {
   width: 40rem;
   height: 19rem;
   object-fit: contain;
-  border-radius: .2rem;
-}
-
-.project_image:hover {
-  height: auto;
 }
 
 .technologies {

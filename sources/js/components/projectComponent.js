@@ -5,8 +5,6 @@ const doc = document;
 export class Project {
   id;
   card;
-  firstContainer;
-  secondContainer;
   btnsContainer;
 
   constructor({ id, image, title, description, technologies, github_link }) {
@@ -17,10 +15,6 @@ export class Project {
 
     this.addIdToCard();
     this.addClassToCard();
-
-    // Create the two container in the card
-    this.firstContainer = this.createFirstContainer();
-    this.secondContainer = this.createSecondContainer();
 
     // Create no-container content; image, title, description.
     this.createImage( image );
@@ -56,25 +50,6 @@ export class Project {
 
   addClassToCard = () => this.card.classList.add("project_card");
 
-  /* ---------------------Card methods--------------------- */
-  createFirstContainer = () => {
-    const div = doc.createElement("div");
-
-    div.classList.add("first_container");
-    this.card.append( div );
-
-    return div;
-  };
-
-  createSecondContainer = () => {
-    const div = doc.createElement("div");
-
-    div.classList.add("second_container");
-    this.card.append( div );
-
-    return div;
-  };
-
   /* ---------------------Card content methods--------------------- */
   createImage = ( image ) => {
     const img = doc.createElement("img");
@@ -83,7 +58,7 @@ export class Project {
     img.alt = "Project model image";
 
     img.classList.add("project_image");
-    this.firstContainer.append( img );
+    this.card.append( img );
   };
 
   createTitle = ( title ) => {
@@ -91,7 +66,7 @@ export class Project {
     h3.innerText = title;
 
     h3.classList.add("project_title");
-    this.secondContainer.append( h3 );
+    this.card.append( h3 );
   };
 
   createDescription = ( description ) => {
@@ -100,7 +75,7 @@ export class Project {
 
     desc.classList.add("project_description");
     desc.classList.add("paragraph");
-    this.secondContainer.append( desc );
+    this.card.append( desc );
   };
 
   truncateDescription = ( description ) => {
@@ -114,7 +89,7 @@ export class Project {
     const btnsContainer = doc.createElement("div");
 
     btnsContainer.classList.add("project_buttons");
-    this.secondContainer.append( btnsContainer );
+    this.card.append( btnsContainer );
 
     return btnsContainer;
   };
@@ -162,13 +137,13 @@ export class Project {
     const techs = doc.createElement("div");
 
     techs.classList.add("technologies");
-    this.secondContainer.append( techs );
-    this.secondContainer.firstElementChild.before( techs );
+    this.card.append( techs );
+    this.card.firstElementChild.after( techs );
   };
 
   getTechonologies = ( techs ) => {
     techs.map( ({ image }) => {
-      new Technology( image, this.secondContainer );
+      new Technology( image, this.card );
     });
   };
 }
