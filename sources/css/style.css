@@ -115,9 +115,25 @@ header, #main_container, footer {
 /* ---------NAVIGATION--------- */
 header {
   color: var(--blue);
-  height: 10.5rem;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 1rem;
+
+  padding: 2rem 0;
+}
+
+@media (min-width: 1440px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0;
+
+    height: 10.5rem;
+    padding: 0;
+  }
 }
 
 .logo {
