@@ -1,4 +1,5 @@
 import { Project } from '/sources/js/components/projectComponent.js';
+import { ThemeManager } from './theme-manager/theme-manager.js';
 
 const path = '/sources/config/data/projects.json';
 
@@ -11,3 +12,5 @@ fetch( path )
   })
   .catch( error => console.log( error ) )
 ;
+
+const themeManager = new ThemeManager();
