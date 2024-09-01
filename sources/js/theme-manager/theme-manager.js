@@ -12,4 +12,8 @@ export class ThemeManager {
 
     this.theme++;
   };
+
+  setCurrentThemeValue = () => {
+    localStorage.setItem("theme", this.currentTheme);
+  };
 }
