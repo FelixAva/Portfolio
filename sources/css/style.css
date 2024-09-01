@@ -282,6 +282,13 @@ h3 {
 }
 .project_description {
   text-align: center;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  line-clamp: 4;
+  -webkit-line-clamp: 4; /* Max line number */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .project_buttons {

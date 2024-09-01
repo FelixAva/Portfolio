@@ -54,7 +54,7 @@
       "id": 3,
       "title": "Calculator",
       "image": "calculator",
-      "description": "Created a personal portfolio website to showcase my projects, dynamically rendering content using HTML, CSS, and JavaScript without relying on a database.",
+      "description": "Mobile calculator application capable of performing essential arithmetic operations such as addition, subtraction, multiplication, and division.",
       "key_contributions": [
         "Implemented dynamic project rendering by fetching data from a manually created JSON file.",
         "Structured the site with clean, maintainable code, focusing on user experience and accessibility."

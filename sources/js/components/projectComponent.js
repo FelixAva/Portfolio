@@ -19,9 +19,6 @@ export class Project {
     // Create no-container content; image, title, description.
     this.createImage( image );
     this.createTitle( title );
-
-    description = this.truncateDescription( description );
-
     this.createDescription( description );
 
     // Create buttons
