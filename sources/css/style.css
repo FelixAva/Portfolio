@@ -39,6 +39,10 @@ body {
   color: var(--white);
 } /* 1 rem = 10 px */
 
+::-webkit-scrollbar {
+  width: 0;
+}
+
 /* ---------SHARED--------- */
 header, #main_container, footer {
   width: 60%;
