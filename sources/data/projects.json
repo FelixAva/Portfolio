@@ -56,8 +56,9 @@
       "image": "calculator",
       "description": "Mobile calculator application capable of performing essential arithmetic operations such as addition, subtraction, multiplication, and division.",
       "key_contributions": [
-        "Implemented dynamic project rendering by fetching data from a manually created JSON file.",
-        "Structured the site with clean, maintainable code, focusing on user experience and accessibility."
+        "Develop the core functionality to handle basic arithmetic operations.",
+        "Managed application state using custom hooks, ensuring smooth operation and clean code structure.",
+        "Ensured smooth performance and compatibility across both Android and iOS platform."
       ],
       "category": "web",
       "modality": "personal",
