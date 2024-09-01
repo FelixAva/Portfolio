@@ -16,4 +16,20 @@ export class ThemeManager {
   setCurrentThemeValue = () => {
     localStorage.setItem("theme", this.currentTheme);
   };
+
+  loadCurrentTheme = ( style ) => {
+    const {
+      primary,
+      secondary,
+      accent,
+      background,
+      black
+    } = themes[ this.currentTheme ];
+
+    style.setProperty("--primary", primary);
+    style.setProperty("--secondary", secondary);
+    style.setProperty("--accent", accent);
+    style.setProperty("--background", background);
+    style.setProperty("--black", black);
+  };
 }
