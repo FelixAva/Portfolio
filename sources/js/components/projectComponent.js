@@ -51,7 +51,7 @@ export class Project {
   createImage = ( image ) => {
     const img = doc.createElement("img");
 
-    img.src = `/sources/images/projects_models/${ image }.webp`;
+    img.src = `/sources/assets/images/projects_models/${ image }.webp`;
     img.alt = "Project model image";
 
     img.classList.add("project_image");
@@ -116,14 +116,14 @@ export class Project {
     const a = this.btnsContainer.getElementsByTagName("a")[ position ];
     const img = doc.createElement("img");
 
-    img.src = `/sources/images/technologies/${ imageNoHover }.webp`;
+    img.src = `/sources/assets/images/technologies/${ imageNoHover }.webp`;
 
     a.addEventListener("mouseleave", () => {
-      img.src = `/sources/images/technologies/${ imageNoHover }.webp`;
+      img.src = `/sources/assets/images/technologies/${ imageNoHover }.webp`;
     });
 
     a.addEventListener("mouseenter", () => {
-      img.src = `/sources/images/technologies/${ imageOnHover }.webp`;
+      img.src = `/sources/assets/images/technologies/${ imageOnHover }.webp`;
     });
 
     a.appendChild( img );
