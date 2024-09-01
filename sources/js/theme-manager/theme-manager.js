@@ -8,9 +8,9 @@ export class ThemeManager {
   };
 
   changeCurrentThemeValue = () => {
-    if (this.theme >= themes.length - 1) return this.theme = 0;
+    if (this.currentTheme >= themes.length - 1) return this.currentTheme = 0;
 
-    this.theme++;
+    this.currentTheme++;
   };
 
   setCurrentThemeValue = () => {
