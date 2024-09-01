@@ -13,7 +13,7 @@ fetch( path )
   .catch( error => console.log( error ) )
 ;
 
-const logo = document.getElementsByClassName("logo")[0];
+const btnTheme = document.getElementById("button_theme");
 const theme = new ThemeManager();
 const style = document.documentElement.style;
 
@@ -22,7 +22,7 @@ window.addEventListener('load', () => {
   theme.loadCurrentTheme( style );
 })
 
-logo.addEventListener('click', () => {
+btnTheme.addEventListener('click', () => {
   theme.changeCurrentThemeValue();
   theme.loadCurrentTheme( style );
   theme.setCurrentThemeValue();
