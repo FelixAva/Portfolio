@@ -45,9 +45,17 @@ body {
 
 /* ---------SHARED--------- */
 header, #main_container, footer {
-  width: 60%;
-  position: relative;
-  left: 20%;
+  padding: 1rem;
+}
+
+@media (min-width: 620px) {
+  header, #main_container, footer {
+    width: 60%;
+    position: relative;
+    left: 20%;
+
+    padding: 0;
+  }
 }
 
 .paragraph {
