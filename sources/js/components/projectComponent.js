@@ -144,5 +144,3 @@ export class Project {
     });
   };
 }
-
-// holi uwu
