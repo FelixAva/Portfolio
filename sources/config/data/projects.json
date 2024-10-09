@@ -75,7 +75,7 @@
     {
       "id": 4,
       "title": "AuthenticationApp",
-      "image": "authentication-app",
+      "image": "authentication",
       "description": "Developed a mobile application using React Native that consumes endpoints from an external API to manage user authentication and session handling.",
       "key_contributions": [
         "Integrated Axios to handle API requests for user registration and login.",
