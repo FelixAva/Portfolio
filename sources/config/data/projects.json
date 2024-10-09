@@ -60,7 +60,7 @@
         "Managed application state using custom hooks, ensuring smooth operation and clean code structure.",
         "Ensured smooth performance and compatibility across both Android and iOS platform."
       ],
-      "category": "web",
+      "category": "mobile",
       "modality": "personal",
       "technologies": [
         {
@@ -71,6 +71,28 @@
         }
       ],
       "github_link": "https://github.com/FelixAva/react-native-calculator"
+    },
+    {
+      "id": 4,
+      "title": "AuthenticationApp",
+      "image": "calculator",
+      "description": "Developed a mobile application using React Native that consumes endpoints from an external API to manage user authentication and session handling.",
+      "key_contributions": [
+        "Integrated Axios to handle API requests for user registration and login.",
+        "Utilized React Hook Forms for input validation.",
+        "Managed user sessions and token storage using Zustand, ensuring seamless session persistence."
+      ],
+      "category": "mobile",
+      "modality": "personal",
+      "technologies": [
+        {
+          "image": "react"
+        },
+        {
+          "image": "typescript"
+        }
+      ],
+      "github_link": "https://github.com/FelixAva/authentication-app"
     }
   ]
 }
