@@ -94,7 +94,7 @@ export class Project {
   createProjectButton = () => {
     const a = doc.createElement("a");
     a.innerText = "Project";
-    a.href = "/sources/pages/projectDetails.html";
+    a.href = "/sources/pages/project-details.html";
 
     a.classList.add("button");
     a.classList.add("blue__btn");
