@@ -1,10 +1,12 @@
 const NavBar = () => {
   return (
-    <div>
-      <h2>Software Engineer</h2>
-      <img src="/src/assets/react.svg" alt="" />
+    <div className="flex justify-between">
+      <div className="flex">
+        <img src="/src/assets/react.svg" alt="" />
+        <h2>Software Engineer</h2>
+      </div>
 
-      <div>
+      <div className="">
         <a href="">Summary</a>
         <a href="">Projects</a>
         <a href="">Archievements & Certifications</a>
