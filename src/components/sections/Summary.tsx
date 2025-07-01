@@ -1,6 +1,6 @@
 const Summary = () => {
   return (
-    <section id='summary' className='snap-start min-h-screen bg-[#EFE9E3] flex justify-center items-center gap-8'>
+    <section id='summary' className='snap-start min-h-[calc(100vh-96px)] bg-[#EFE9E3] flex justify-center items-center gap-8'>
       <img src="/src/assets/me.jpeg" alt="Image of myself" className='w-80 h-full rounded-full' />
 
       <div className='w-150'>
