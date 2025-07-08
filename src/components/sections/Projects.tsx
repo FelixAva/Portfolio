@@ -6,21 +6,21 @@ const projectsList: ProjectDetails[] = [ //* Temporal pseudo - JSON. Firebase/Su
   {
     id: 1,
     title: 'Template',
-    description: '',
+    description: 'description',
     stack: [],
     image: ''
   },
   {
     id: 2,
     title: 'Template',
-    description: '',
+    description: 'description',
     stack: [],
     image: ''
   },
   {
     id: 3,
     title: 'Template',
-    description: '',
+    description: 'description',
     stack: [],
     image: ''
   },
@@ -29,12 +29,14 @@ const projectsList: ProjectDetails[] = [ //* Temporal pseudo - JSON. Firebase/Su
 
 const Projects = () => {
   return (
-    <section id="projects" className='snap-start min-h-[calc(100vh-96px)] bg-white'>
-      {
-        projectsList.map((item: ProjectDetails) => (
-          <ProjectCard {...item} />
-        ))
-      }
+    <section id="projects" className='snap-start min-h-[calc(100vh-96px)] bg-white flex justify-center items-center'>
+      <div className="grid grid-cols-2 gap-10">
+        {
+          projectsList.map((item: ProjectDetails) => (
+            <ProjectCard key={item.title + item.id} {...item} />
+          ))
+        }
+      </div>
     </section>
   );
 }
