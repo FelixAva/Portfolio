@@ -2,7 +2,7 @@ const NavBar = () => {
   return (
     <div id="navbar" className="h-24 flex pb-2 pt-2 pl-10 pr-10 justify-between items-center overflow-y-hidden">
       <div className="flex gap-5 items-center">
-        <img src="/src/assets/logo_crop.png" alt="" className="h-15 rounded-full"/>
+        <img src="/assets/logo.webp" alt="" className="h-15 rounded-full"/>
         <h2 className="text-xl text-[#2e2e2e]">Software Engineer</h2>
       </div>
 
