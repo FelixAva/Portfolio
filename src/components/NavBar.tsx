@@ -8,7 +8,7 @@ const NavBar = () => {
 
       <div className="flex gap-10">
         <nav className='flex gap-5 text-2xl'>
-          <a href="#summary" className='hover:text-[#8d8d8d]'>Summary</a>
+          <a href="#summary">Summary</a>
           <b>|</b>
           <a href="#projects">Projects</a>
           <b>|</b>
