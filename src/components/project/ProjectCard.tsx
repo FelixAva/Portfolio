@@ -1,5 +1,5 @@
 import type { ProjectDetails } from "../../types/Project";
-import { Button, Icon } from "../";
+import { Button } from "../";
 
 
 const ProjectCard = ({
