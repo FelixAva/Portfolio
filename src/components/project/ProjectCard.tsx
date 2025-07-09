@@ -3,10 +3,11 @@ import type { ProjectDetails } from "../../types/Project";
 const ProjectCard = ({
   id,
   title,
-  description,
-  stack,
-  image
+  // description,
+  // stack,
+  // image
 }: ProjectDetails) => {
+
   return (
     <div id={title.toLowerCase() + id} className="w-xl justify-between">
       <div className="flex">
