@@ -3,6 +3,7 @@ import NavBar from './layout/NavBar';
 
 // UI's imports
 import Button from './ui/Button';
+import Icon from './ui/Icon';
 
 // Section's imports
 import Summary from './sections/Summary';
@@ -17,6 +18,7 @@ export {
 
   // UI's exports
   Button,
+  Icon,
 
   // Sections's exports
   Summary,

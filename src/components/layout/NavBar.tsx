@@ -1,3 +1,5 @@
+import { Button } from "../";
+
 const NavBar = () => {
   return (
     <div id="navbar" className="h-24 flex pb-2 pt-2 pl-10 pr-10 justify-between items-center overflow-y-hidden">
@@ -6,7 +8,7 @@ const NavBar = () => {
         <h2 className="text-xl text-[#2e2e2e]">Software Engineer</h2>
       </div>
 
-      <div className="flex gap-10">
+      <div className="flex gap-10 items-center">
         <nav className='flex gap-5 text-2xl'>
           <a href="#summary">Summary</a>
           <b>|</b>
@@ -17,9 +19,9 @@ const NavBar = () => {
           <a href="">Stack</a>
         </nav>
 
-        <div className="text-xl">
-          <button>Curriculum + Icon</button> {/* Replace "+ Icon" with an Icon tag */}
-          <button hidden>Theme</button>
+        <div className="flex gap-2.5 text-xl">
+          <Button title="Curriculum" hasIcon icon="download-outline" />
+          <Button title="Theme" hasIcon icon="sunny-outline" />
         </div>
       </div>
     </div>
