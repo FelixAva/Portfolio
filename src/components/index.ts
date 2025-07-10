@@ -11,6 +11,7 @@ import Projects from './sections/Projects';
 
 // Project's imports
 import ProjectCard from './project/ProjectCard';
+import TechnologyTag from './project/TechnologyTag';
 
 export {
   // Layout's exports
@@ -25,5 +26,6 @@ export {
   Projects,
 
   // Project's exports
-  ProjectCard
+  ProjectCard,
+  TechnologyTag
 }

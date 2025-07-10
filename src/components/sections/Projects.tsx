@@ -7,21 +7,21 @@ const projectsList: ProjectDetails[] = [ //* Temporal pseudo - JSON. Firebase/Su
     id: 1,
     title: 'Template',
     description: 'description',
-    stack: [],
+    stack: ['React', 'TypeScript', 'JavaScript'],
     image: ''
   },
   {
     id: 2,
     title: 'Template',
     description: 'description',
-    stack: [],
+    stack: ['React', 'TypeScript', 'JavaScript'],
     image: ''
   },
   {
     id: 3,
     title: 'Template',
     description: 'description',
-    stack: [],
+    stack: ['React', 'TypeScript', 'JavaScript'],
     image: ''
   },
 ]
