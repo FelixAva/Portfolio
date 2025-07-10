@@ -18,7 +18,7 @@ const ProjectCard = ({
         <div className="w-full flex flex-col text-center justify-between py-4">
           <h3 className="text-2xl font-semibold">{ title }</h3>
           <div className="flex flex-col items-center justify-center gap-4 mt-4">
-            <Button title="Details" />
+            <Button title="Details" hasIcon icon="chevron-forward-circle-outline" />
             <Button title="GitHub" hasIcon icon="logo-github" />
           </div>
         </div>
