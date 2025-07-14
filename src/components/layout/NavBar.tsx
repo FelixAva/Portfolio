@@ -20,7 +20,7 @@ const NavBar = () => {
         </nav>
 
         <div className="flex gap-2.5 text-xl">
-          <Button title="Curriculum" hasIcon icon="download-outline" />
+          <Link src="/assets/FelixAvalos_CV.pdf" title="Curriculum" style="button" icon="download-outline" />
           <Button title="Theme" hasIcon icon="sunny-outline" />
         </div>
       </div>
