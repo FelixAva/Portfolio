@@ -14,6 +14,9 @@ import Projects from './sections/Projects';
 import ProjectCard from './project/ProjectCard';
 import TechnologyTag from './project/TechnologyTag';
 
+// Project's imports
+import StackShield from './stack/StackShield';
+
 export {
   // Layout's exports
   NavBar,
@@ -29,5 +32,8 @@ export {
 
   // Project's exports
   ProjectCard,
-  TechnologyTag
+  TechnologyTag,
+
+  // Stack's exports
+  StackShield,
 }
