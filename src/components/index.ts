@@ -4,6 +4,7 @@ import NavBar from './layout/NavBar';
 // UI's imports
 import Button from './ui/Button';
 import Icon from './ui/Icon';
+import Link from './ui/Link';
 
 // Section's imports
 import Summary from './sections/Summary';
@@ -20,6 +21,7 @@ export {
   // UI's exports
   Button,
   Icon,
+  Link,
 
   // Sections's exports
   Summary,
