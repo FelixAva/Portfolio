@@ -1,5 +1,5 @@
 import type { ProjectDetails } from "../../types/Project";
-import { Button, TechnologyTag } from "../";
+import { Link, TechnologyTag } from "../";
 
 
 const ProjectCard = ({
@@ -7,7 +7,8 @@ const ProjectCard = ({
   title,
   description,
   stack,
-  // image
+  // image,
+  repo
 }: ProjectDetails) => {
 
   return (
@@ -18,8 +19,8 @@ const ProjectCard = ({
         <div className="w-full flex flex-col text-center justify-between py-4">
           <h3 className="text-2xl font-semibold">{ title }</h3>
           <div className="flex flex-col items-center justify-center gap-4 mt-4">
-            <Button title="Details" hasIcon icon="chevron-forward-circle-outline" />
-            <Button title="GitHub" hasIcon icon="logo-github" />
+            <Link src={repo} title="Details" icon="chevron-forward-circle-outline" style="button" />
+            <Link src={repo} title="GitHub" icon="logo-github" style="button" />
           </div>
         </div>
       </div>

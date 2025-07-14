@@ -16,19 +16,17 @@ const Link = ({
 }: Props) => {
   return style === 'default' ?
   (
-    <a href={src}>
+    <a href={src} className="hover:text-[#8d8d8d]">
       { title }
     </a>
   )
   :
   (
-    <div className={
+    <a href={src} className={
       clsx(
       'flex justify-center items-center gap-3.5 text-xl rounded-lg py-3 px-4 border-2 border-black bg-white text-black',
-      'hover:bg-black hover:text-white hover:border-black hover:cursor-pointer'
-    )}>
-      <a href={src}>{ title } <Icon icon={icon} className="" /></a>
-    </div>
+      'hover:bg-black hover:text-white hover:border-black'
+    )}>{ title } <Icon icon={icon} className="" /></a>
   );
 };
 
