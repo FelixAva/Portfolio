@@ -28,7 +28,7 @@ const ProjectCard = ({
       <div className="py-3.5 flex flex-wrap gap-x-5 gap-y-2">
         {
           stack.map((name) => (
-            <TechnologyTag name={name} />
+            <TechnologyTag key={title + name} name={name} />
           ))
         }
       </div>
