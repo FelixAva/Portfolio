@@ -1,4 +1,4 @@
-import { Button } from "../";
+import { Button, Link } from "../";
 
 const NavBar = () => {
   return (
@@ -10,13 +10,13 @@ const NavBar = () => {
 
       <div className="flex gap-10 items-center">
         <nav className='flex gap-5 text-2xl'>
-          <a href="#summary">Summary</a>
-          <b>|</b>
-          <a href="#projects">Projects</a>
-          <b>|</b>
-          <a href="#a">Archievements & Certifications</a>
-          <b>|</b>
-          <a href="">Stack</a>
+          <Link src="#summary" title="Summary" />
+          <>|</>
+          <Link src="#projects" title="Projects" />
+          <>|</>
+          <Link src="#a&c" title="Archievements & Certifications" />
+          <>|</>
+          <Link src="#stack" title="Stack" />
         </nav>
 
         <div className="flex gap-2.5 text-xl">
