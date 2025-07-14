@@ -5,7 +5,7 @@ import { Button, TechnologyTag } from "../";
 const ProjectCard = ({
   id,
   title,
-  // description,
+  description,
   stack,
   // image
 }: ProjectDetails) => {
@@ -32,7 +32,7 @@ const ProjectCard = ({
         }
       </div>
 
-      <p className="text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus inventore minus excepturi facere optio quasi  necessitatibus modi quis? Nam, ducimus! Laborum ab, pariatur exercitationem sed sint aliquam reiciendis!</p>
+      <p className="text-lg">{ description }</p>
     </div>
   )
 };

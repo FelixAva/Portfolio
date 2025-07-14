@@ -4,4 +4,5 @@ export interface ProjectDetails {
   description: string;
   stack: string[];
   image: string;
+  repo: string;
 }
