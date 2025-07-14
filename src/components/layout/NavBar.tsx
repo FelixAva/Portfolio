@@ -20,8 +20,8 @@ const NavBar = () => {
         </nav>
 
         <div className="flex gap-2.5 text-xl">
-          <Link src="/assets/FelixAvalos_CV.pdf" title="Curriculum" style="button" icon="download-outline" />
-          <Button title="Theme" hasIcon icon="sunny-outline" />
+          <Link src="/assets/FelixAvalos_CV.pdf" title="Curriculum" style="button" icon="download-04" />
+          <Button title="Theme" hasIcon icon="sun-03" />
         </div>
       </div>
     </div>

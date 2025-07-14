@@ -19,8 +19,8 @@ const ProjectCard = ({
         <div className="w-full flex flex-col text-center justify-between py-4">
           <h3 className="text-2xl font-semibold">{ title }</h3>
           <div className="flex flex-col items-center justify-center gap-4 mt-4">
-            <Link src={repo} title="Details" icon="chevron-forward-circle-outline" style="button" />
-            <Link src={repo} title="GitHub" icon="logo-github" style="button" />
+            <Link src={repo} title="Details" icon="circle-arrow-right-01" style="button" />
+            <Link src={repo} title="GitHub" icon="github-01" style="button" />
           </div>
         </div>
       </div>

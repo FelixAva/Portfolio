@@ -9,13 +9,13 @@ interface Props {
 
 const Icon = ( {
   icon,
-  width=25,
+  width=30,
   color,
   className=""
 }: Props ) => {
   return (
     <Iconify
-      icon={`ion:${icon}`}
+      icon={`hugeicons:${icon}`}
       width={width}
       color={color}
       className={className}
