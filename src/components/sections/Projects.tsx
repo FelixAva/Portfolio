@@ -19,6 +19,14 @@ const projectsList: ProjectDetails[] = [ //* Temporal pseudo - JSON. Firebase/Su
     image: '',
     repo:'https://github.com/FelixAva/programobile'
   },
+  {
+    id: 3,
+    title: 'This Portfolio',
+    description: 'Website to show my resumé, projects and archievements. Build it with React and Vite',
+    stack: ['React Native', 'TypeScript'],
+    image: '',
+    repo:'https://github.com/FelixAva/portfolio'
+  },
 ]
 
 
