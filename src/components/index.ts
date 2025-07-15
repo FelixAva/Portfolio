@@ -16,6 +16,7 @@ import TechnologyTag from './project/TechnologyTag';
 
 // Project's imports
 import StackShield from './stack/StackShield';
+import StackRow from './stack/StackRow';
 
 export {
   // Layout's exports
@@ -36,4 +37,5 @@ export {
 
   // Stack's exports
   StackShield,
+  StackRow
 }
