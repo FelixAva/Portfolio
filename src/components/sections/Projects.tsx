@@ -8,7 +8,7 @@ const projectsList: ProjectDetails[] = [ //* Temporal pseudo - JSON. Firebase/Su
     title: 'EDUCAPP',
     description: 'Project presented at ANUIES4MX (internship to Japan). Generated personalized forms using the OpenAI API. Built a mobile app to display and manage and manage assessments. Implemented dynamic form components',
     stack: ['React Native', 'TypeScript', 'OpenAI API'],
-    image: '',
+    image: 'https://placehold.co/250X250.png',
     repo:'https://github.com/FelixAva/stay'
   },
   {
@@ -16,15 +16,15 @@ const projectsList: ProjectDetails[] = [ //* Temporal pseudo - JSON. Firebase/Su
     title: 'Music App',
     description: 'Mobile application with authentication and API Consumption (Last.fm). Retrieved musical data (artists and details) from an external API. Validated Login and registration forms. Managed user sessions with local storage',
     stack: ['React Native', 'TypeScript', 'JavaScript'],
-    image: '',
+    image: 'https://placehold.co/250X250.png',
     repo:'https://github.com/FelixAva/programobile'
   },
   {
     id: 3,
     title: 'This Portfolio',
-    description: 'Website to show my resumé, projects and archievements. Build it with React and Vite',
+    description: 'Website to show my résumé, projects and archievements. Build it with React and Vite',
     stack: ['React Native', 'TypeScript'],
-    image: '',
+    image: '/assets/logo.webp',
     repo:'https://github.com/FelixAva/portfolio'
   },
 ]

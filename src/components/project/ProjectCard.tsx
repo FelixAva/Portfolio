@@ -7,14 +7,14 @@ const ProjectCard = ({
   title,
   description,
   stack,
-  // image,
+  image,
   repo
 }: ProjectDetails) => {
 
   return (
     <div id={title.toLowerCase() + id} className="w-2xl justify-between">
       <div className="flex">
-        <img src="https://placehold.co/250X250.png" alt={title + "'s image representation"} className="rounded-2xl" />
+        <img src={image} alt={title + "'s image representation"} className="rounded-2xl w-[250px]" />
 
         <div className="w-full flex flex-col text-center justify-between py-4">
           <h3 className="text-2xl font-semibold">{ title }</h3>
