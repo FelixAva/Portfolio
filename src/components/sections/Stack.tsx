@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { StackRow } from "../";
 import type { StackDetails } from "../../types/Stack";
 
