@@ -8,7 +8,7 @@ const LandingPage = () => {
   return (
     <div>
       <NavBar />
-      <main className='h-[calc(100vh-96px)] overflow-y-scroll snap-y snap-mandatory'>
+      <main className='md:h-[calc(100vh-96px)] overflow-y-scroll snap-y snap-mandatory'>
         <Summary />
         <Projects />
         <Stack />
