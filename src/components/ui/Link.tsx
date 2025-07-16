@@ -26,7 +26,7 @@ const Link = ({
   (
     <a href={src} download={src} target="_blank" className={
       clsx(
-      'flex justify-center items-center gap-3.5 text-xl rounded-lg py-3 px-4 border-2 border-black bg-white text-black',
+      'flex justify-center items-center gap-2 text-lg rounded-lg py-2 px-3 border-2 border-black bg-white text-black md:py-3 md:px-4 md:gap-3.5 md:text-xl',
       'hover:bg-black hover:text-white hover:border-black'
     )}>{ title } <Icon icon={icon} className="" /></a>
   );
