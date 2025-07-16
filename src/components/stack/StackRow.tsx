@@ -9,8 +9,8 @@ interface Props {
 const StackRow = ({ stackList, title }: Props) => {
   return (
     <div className="text-center">
-      <h3 className="my-2.5 text-3xl font-medium">{ title }</h3>
-      <div className="flex justify-center">
+      <h3 className="text-2xl mb-2 font-semibold md:mb-2.5 md:text-3xl">{ title }</h3>
+      <div className="flex justify-start md:justify-center overflow-x-scroll md:overflow-x-hidden">
         {
           stackList.map((item) => (
             <StackShield key={item.name + item.category} {...item} />

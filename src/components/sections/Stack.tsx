@@ -93,7 +93,7 @@ stackList.map(( item: StackDetails ) => {
 
 const Stack = () => {
   return (
-    <div id="stack" className="snap-start min-h-[calc(100vh-96px)] relative grid grid-rows-4">
+    <div id="stack" className="snap-start py-2 relative flex flex-col gap-2.5 md:min-h-[calc(100vh-96px)] md:pt-0 md:grid md:grid-rows-4 md:gap-0">
       <StackRow stackList={langList} title="Progamming Languages" />
       <StackRow stackList={frameList} title="Frameworks" />
       <StackRow stackList={dbList} title="Databases" />
