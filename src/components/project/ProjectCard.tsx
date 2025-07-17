@@ -11,7 +11,7 @@ const ProjectCard = ({
 }: ProjectDetails) => {
 
   return (
-    <div id={title.toLowerCase() + id} className="md:justify-between md:w-2xl">
+    <div id={title.toLowerCase() + id} className="md:justify-between md:w-2xl xl:w-xl 2xl:w-2xl">
       <div className="flex">
         <img src={image} alt={title + "'s image representation"} className="rounded-2xl w-[150px] h-full md:w-[250px]" />
 
