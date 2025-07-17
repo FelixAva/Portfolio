@@ -2,8 +2,8 @@ import { Button, Link } from "../";
 
 const NavBar = () => {
   return (
-    <div id="navbar" className="h-full py-5 flex flex-col gap-2 items-center overflow-y-hidden lg:flex-row 2xl:h-24 xl:px-10 xl:pt-2 xl:pb-2 xl:justify-between">
-      <div className="flex flex-col justify-center items-center lg:w-2xl lg:flex-row lg:gap-5 xl:w-auto">
+    <div id="navbar" className="h-full py-5 flex flex-col gap-2 items-center overflow-y-hidden lg:px-10 lg:flex-row xl:pt-2 xl:pb-2 xl:justify-between 2xl:h-24">
+      <div className="flex flex-col items-center lg:w-2xl lg:flex-row lg:gap-5 xl:w-auto">
         <img src="/assets/logo.webp" alt="" className="h-15 rounded-full"/>
         <h2 className="text-2xl text-[#2e2e2e] xl:text-xl">Software Engineer</h2>
       </div>
