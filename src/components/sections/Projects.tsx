@@ -32,7 +32,7 @@ const projectsList: ProjectDetails[] = [ //* Temporal pseudo - JSON. Firebase/Su
 
 const Projects = () => {
   return (
-    <section id="projects" className='snap-start my-5 mx-2.5 bg-white md:flex md:justify-center md:items-center md:min-h-[calc(100vh-96px)] md:m-0'>
+    <section id="projects" className='snap-start my-5 mx-4 bg-white md:flex md:justify-center md:items-center md:min-h-[calc(100vh-96px)] md:m-0'>
       <div className="flex flex-col gap-5 md:grid md:grid-cols-2 md:gap-x-7 md:gap-y-7">
         {
           projectsList.map((item: ProjectDetails) => (

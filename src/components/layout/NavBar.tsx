@@ -2,7 +2,7 @@ import { Button, Link } from "../";
 
 const NavBar = () => {
   return (
-    <div id="navbar" className="h-[400px] flex flex-col gap-2 items-center overflow-y-hidden md:h-24 md:px-10 md:pt-2 md:pb-2 md:flex-row md:justify-between">
+    <div id="navbar" className="h-full py-5 flex flex-col gap-2 items-center overflow-y-hidden md:h-24 md:px-10 md:pt-2 md:pb-2 md:flex-row md:justify-between">
       <div className="flex flex-col justify-center items-center md:flex-row md:gap-5">
         <img src="/assets/logo.webp" alt="" className="h-15 rounded-full"/>
         <h2 className="text-2xl text-[#2e2e2e] md:text-xl">Software Engineer</h2>
