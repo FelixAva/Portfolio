@@ -18,7 +18,7 @@ const Link = ({
 }: Props) => {
   return style === 'default' ?
   (
-    <a href={src} className="hover:text-[#8d8d8d] underline md:no-underline">
+    <a href={src} className="hover:text-[#8d8d8d] lg:w-full xl:w-auto">
       { title }
     </a>
   )
