@@ -11,7 +11,7 @@ const StackRow = ({ stackList, title }: Props) => {
   return (
     <div className="text-center">
       <h3 className="text-2xl mb-2 font-semibold md:mb-2.5 md:text-3xl">{ title }</h3>
-      <div className={clsx("flex md:justify-center overflow-x-scroll md:overflow-x-hidden", stackList.length < 3 ? 'justify-center' : '')}>
+      <div className={clsx("flex xl:justify-center overflow-x-scroll xl:overflow-x-hidden", stackList.length < 3 ? 'justify-center' : '')}>
         {
           stackList.map((item) => (
             <StackShield key={item.name + item.category} {...item} />

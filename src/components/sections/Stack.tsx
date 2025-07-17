@@ -72,6 +72,11 @@ const stackList: StackDetails[] = [
     icon: 'figma',
     category: "tool"
   },
+  {
+    name: 'Notion',
+    icon: 'notion-02',
+    category: "tool"
+  },
 ];
 
 let langList: StackDetails[] = [];
@@ -93,7 +98,7 @@ stackList.map(( item: StackDetails ) => {
 
 const Stack = () => {
   return (
-    <div id="stack" className="snap-start py-2 mx-3 relative flex flex-col gap-2.5 md:min-h-[calc(100vh-96px)] md:pt-0 md:grid md:grid-rows-4 md:gap-0">
+    <div id="stack" className="snap-start py-2 mx-3 relative flex flex-col gap-2.5 xl:pt-0 xl:grid xl:grid-rows-4 xl:gap-0 lg:min-h-[calc(100vh-198px)] xl:min-h-[calc(100vh-142px)] 2xl:min-h-[calc(100vh-96px)]">
       <StackRow stackList={langList} title="Progamming Languages" />
       <StackRow stackList={frameList} title="Frameworks" />
       <StackRow stackList={dbList} title="Databases" />
